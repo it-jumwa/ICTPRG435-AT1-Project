@@ -34,7 +34,7 @@ window = Tk()
 window.title("Window :O")
 
 # Sets the size of the application window
-window.geometry("1080x720")
+window.geometry("360x360")
 
 # Creates a text label
 label = Label(window, text="Enter first value: ")
