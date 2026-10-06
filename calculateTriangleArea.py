@@ -28,7 +28,7 @@ def calculate_button():
 
     # Hide the error label when inputs pass the validation checks
     error.pack_forget()
-    area = 0.5 * (int(base_entry.get()) * int(height_entry.get()))
+    area = 0.5 * base * int(height_entry.get())
     result.config(text="Your input is: " + f"{area}")
 
 
