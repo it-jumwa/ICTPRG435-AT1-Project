@@ -18,6 +18,15 @@ def click_button():
     result.config(text="Your input is: " + number_entry.get())
 
 
+def exit_button():
+    window.destroy()
+
+
+def clear():
+    result.config(text="Your input is: ")
+    number_entry.delete(0, "end")
+
+
 # Creates the main application window
 window = Tk()
 
@@ -43,10 +52,19 @@ result = Label(window, text="Your input is: ...")
 # Adds the label widget to the application window
 result.pack()
 
-# Creates a button widget
+# Creates a button widget, for outputting the user's input
 button = Button(window, text="Click Me!", command=click_button)
 # Adds the button widget to the application window
 button.pack()
+
+clear_button = Button(window, text="Clear", command=clear)
+clear_button.pack()
+
+
+# Creates a button widget, for closing the application
+exit_button = Button(window, text="Exit", command=exit_button)
+# Adds the button widget to the application window
+exit_button.pack()
 
 # Starts the event loop, keeping the window responsive
 window.mainloop()
