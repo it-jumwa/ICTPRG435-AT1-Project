@@ -3,7 +3,7 @@ Name: Jaimee Molina
 ID: 202514907
 Date Created: 06-10-2026
 
-A program demonstrating the basic of tkinter
+A program demonstrating the basics of tkinter
 """
 from tkinter import *
 
