@@ -9,7 +9,7 @@ User input is accepted through tkinter GUI and validated prior to calculation
 from tkinter import *
 
 
-def calculate_button():
+def calculate_area():
     """
     Calculates the area of a triangle and updates the result label text when
     the button is clicked
@@ -184,7 +184,7 @@ result.pack()
 """Buttons"""
 
 # Creates a button widget, for outputting the user's input
-button = Button(window, text="Calculate", command=calculate_button)
+button = Button(window, text="Calculate", command=calculate_area)
 # Adds the button widget to the application window
 button.pack()
 
