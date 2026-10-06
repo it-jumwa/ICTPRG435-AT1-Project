@@ -9,7 +9,14 @@ from tkinter import *
 
 
 def click_button():
+    """
+    Updates the result label text when the button is clicked
+    :return: None
+    """
+    # Updating a Label widget uses the following syntax
+    # [Label].config(text="[Text to display]")
     result.config(text="Your input is: " + number_entry.get())
+
 
 # Creates the main application window
 window = Tk()
