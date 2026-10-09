@@ -29,7 +29,10 @@ def calculate_area():
     # Calculate the area of the triangle
     area = 0.5 * base * height
     # Update the result label text
-    result.config(text="The area is: " + f"{area}")
+    if (area % 1) == 0:
+        result.config(text="The area is: " + f"{area:.0f}")
+    else:
+        result.config(text="The area is: " + f"{area}")
 
 
 def exit_button():
